@@ -1,0 +1,49 @@
+<%- include partials/header %> <!--Header-->
+<%- include partials/main_nav %> <!--Navigation-->
+
+<h1 class="contactme text-center my-4">Contact Me</h1> <!--Title-->
+
+<!-- Contact Form -->
+<div class="container mb-3"> <!-- Container with bottom margin -->
+  <form class="needs-validation" novalidate> <!-- Form with Bootstrap validation classes -->
+    
+    <!-- First Name -->
+    <div class="mb-3"> <!-- Form group with bottom margin -->
+      <label for="firstName" class="form-label">First Name:</label> <!-- Label for the first name input -->
+      <input type="text" class="form-control" id="firstName" required placeholder="Enter Your First Name"> <!-- Input field for first name with validation -->
+      <div class="valid-feedback">Looks good!</div> <!-- Feedback for valid input -->
+      <div class="invalid-feedback">Please enter your first name.</div> <!-- Feedback for invalid input -->
+    </div>
+
+    <!-- Last Name -->
+    <div class="mb-3"> <!-- Form group with bottom margin -->
+      <label for="lastName" class="form-label">Last Name:</label> <!-- Label for the last name input -->
+      <input type="text" class="form-control" id="lastName" required placeholder="Enter Your Last Name"> <!-- Input field for last name with validation -->
+      <div class="valid-feedback">Looks good!</div> <!-- Feedback for valid input -->
+      <div class="invalid-feedback">Please enter your last name.</div> <!-- Feedback for invalid input -->
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3"> <!-- Form group with bottom margin -->
+      <label for="email" class="form-label">Email Address:</label> <!-- Label for the email input -->
+      <input type="email" class="form-control" id="email" required placeholder="Enter Your Email"> <!-- Input field for email with validation -->
+      <div class="valid-feedback">Looks good!</div> <!-- Feedback for valid input -->
+      <div class="invalid-feedback">Please enter a valid email address.</div> <!-- Feedback for invalid input -->
+    </div>
+
+    <!-- Comments -->
+    <div class="mb-3"> <!-- Form group with bottom margin -->
+      <label for="comments" class="form-label">Any Comments:</label> <!-- Label for the comments textarea -->
+      <textarea class="form-control" id="comments" rows="3" placeholder="Enter any Questions or Queries"></textarea> <!-- Textarea for comments -->
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center"> <!-- Centered container for the button -->
+      <button class="btn btn-primary" type="submit">Submit</button> <!-- Submit button with Bootstrap styling -->
+    </div>
+  </form>
+</div>
+
+<%- include partials/footer %> <!--Footer-->
+
+<script src="/Script/form_validation.js"></script> <!-- Link to external JavaScript file for form validation -->
